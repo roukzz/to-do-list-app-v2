@@ -75,9 +75,10 @@ app.post("/delete",function(req,res){
         console.log(err);
       }else{
         console.log("successfuly deleted item from ItemsDB");
+
       }
   });
-  res.redirect("/")
+  res.redirect("/");
 });
 
 app.get("/work", function(req,res){
@@ -90,4 +91,5 @@ app.get("/about", function(req, res){
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
+    console.log("Hello World");
 });
