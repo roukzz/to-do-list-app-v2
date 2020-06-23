@@ -67,7 +67,8 @@ Item.find(function(err,foundItems){
 
 
 app.get("/:list",function(req,res){
-  const listName = req.params.list;
+  const listName = _.capitalize(req.params.list);
+
 List.findOne({name:listName},function(err,list){
 
     if(err){
@@ -155,5 +156,4 @@ app.get("/about", function(req, res){
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
-    console.log("Hello World !!!");
 });
