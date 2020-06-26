@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB",{ useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect("mongodb+srv://admin-farouk:Test123@cluster0-xult5.mongodb.net/todolistDB",{ useUnifiedTopology: true, useNewUrlParser: true });
 // const items = ["Buy Food", "Cook Food", "Eat Food"];
 // const workItems = [];
 
